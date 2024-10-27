@@ -1,0 +1,67 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background-color: #121212;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+section {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+}
+
+section:nth-child(even) {
+  background-color: #212121;
+}
+
+.language-switch {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.language-switch:hover {
+  transform: translateY(-2px);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  .skills-container {
+    flex-direction: column;
+  }
+  
+  .cocktails-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .language-switch {
+    top: 1rem;
+    right: 1rem;
+  }
+}
